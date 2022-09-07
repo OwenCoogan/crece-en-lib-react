@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -7,16 +6,24 @@ import {
   Routes,
 } from "react-router-dom";
 import Home from './Screens/Home';
+import HeaderCustom from './components/Header';
+import FooterCustom from './components/Footer';
+import ContactFormScreen from './Screens/ContactFormScreen';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
+  <Router>
+    <div
+      className="p-10"
+    >
+      <HeaderCustom/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ContactFormScreen/>} />
+      </Routes>
+      <FooterCustom/>
     </div>
+  </Router>
   );
 }
 
