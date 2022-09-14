@@ -3,7 +3,7 @@ import { Footer } from 'flowbite-react'
 export default function FooterCustom(){
   return (
     <div
-      className="fixed bottom-0 w-full"
+      className="fixed bottom-0 w-full bg-primary-300 dark:bg-gray-800"
     >
     <Footer container={true}
     >
