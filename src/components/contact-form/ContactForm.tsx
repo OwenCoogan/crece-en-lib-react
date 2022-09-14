@@ -40,7 +40,14 @@ export default function ContactForm(
         required={true}
       />
     </div>
-    <Button type="submit">
+    <Button type="submit"
+      style={
+        {
+          backgroundColor: '#000',
+          color: '#ffc933',
+        }
+      }
+    >
       Submit
     </Button>
   </form>
