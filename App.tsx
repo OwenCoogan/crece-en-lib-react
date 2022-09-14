@@ -14,16 +14,14 @@ function App() {
   return (
   <Router>
     <div
-      className=" bg-primary-200 dark:bg-gray-800"
+      className=" bg-primary-200 dark:bg-gray-800 h-screen"
     >
       <HeaderCustom/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactFormScreen/>} />
       </Routes>
-      <FooterCustom
-
-      />
+      <FooterCustom/>
     </div>
   </Router>
   );

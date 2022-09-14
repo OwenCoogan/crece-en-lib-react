@@ -2,8 +2,11 @@ import ContactForm from '../components/contact-form/ContactForm';
 
 export default function ContactFormScreen(){
   return (
-    <div>
-      <h1>Contact</h1>
+    <div
+      className={
+        'justify-center items-center h-auto mt-8'
+      }
+    >
       <ContactForm
       />
     </div>
