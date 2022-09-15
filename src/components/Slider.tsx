@@ -26,17 +26,15 @@ const post = [
 export default function HeroHeader(){
   return (
     <div
-      className="grid max-w-screen-xl px-4 py-8 h-screen m-w-full m-auto"
+      className="h-56 sm:h-64 xl:h-96 2xl:h-96 mb-24 px-12"
     >
-    <h2 className='text-4xl font-extrabold dark:text-white'>Nos News</h2>
+    <h2 className='text-4xl font-extrabold dark:text-white mt-10'>Gallerie d'images</h2>
     <Carousel>
       {post.map((post, index) => (
-        <PostCard
-          key={index}
-          title={post.title}
-          description={post.description}
-          image={post.image}
-        /> ))}
+        <img src={post.image} alt={post.description}
+          className="absolute block w-full lg:w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        />
+      ))}
     </Carousel>
     </div>
   )

@@ -14,7 +14,7 @@ function App() {
   return (
   <Router>
     <div
-      className=" bg-primary-200 dark:bg-gray-800 h-full"
+      className=" bg-primary-200 dark:bg-gray-800 h-screen"
     >
       <HeaderCustom/>
       <Routes>

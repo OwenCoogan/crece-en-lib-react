@@ -17,7 +17,7 @@ export default function PostCard({
 }: PostCardProps) {
   return (
     <div
-      className="max-w-lg m-auto content-center"
+      className="max-w-xs m-auto content-center sm:max-w-screen-sm"
     >
       <Card imgSrc={image ? image : `https://flowbite.com/docs/images/blog/image-1.jpg`} horizontal={false}>
         <h5 className={`text-2xl font-bold tracking-tight text-gray-900 dark:text-primary max-w-sm
